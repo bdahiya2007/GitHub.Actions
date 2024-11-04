@@ -14,4 +14,7 @@ jobs:
         run: env
       - name: Adding a path
         run: echo "$HOME/.m2" >> "$GITHUB_PATH"
+
+      - name: DisplayingList Environment variables after adding '$HOME/.m2'
+        run: env
     
