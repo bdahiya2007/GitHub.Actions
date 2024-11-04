@@ -12,4 +12,6 @@ jobs:
         run: echo "Hello, World!"
       - name: List Environment variables
         run: env
+      - name: Adding a path
+        run: echo "$HOME/.m2" >> "$GITHUB_PATH"
     
