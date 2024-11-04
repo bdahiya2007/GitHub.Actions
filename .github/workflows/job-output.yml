@@ -20,12 +20,12 @@ jobs:
           echo "country=USA" >> $GITHUB_OUTPUT
 
       - name: access output
-        run: echo "The value of name is  ${{ steps.set-output.outputs.name }}""
+        run: echo "The value of name is  ${{ steps.set-output.outputs.name }}"
 
   job2:
    runs-on: ubuntu-latest      
    
    steps:
       - name: access output
-        run: echo "Value of name is ${{ steps.set-output.outputs.name }}""
+        run: echo "Value of name is ${{ steps.set-output.outputs.name }}"
         
