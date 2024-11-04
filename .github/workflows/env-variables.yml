@@ -20,3 +20,11 @@ jobs:
           echo "Awesome!!"
           echo "Great contents"
           echo "Thank you for sharing."
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hello, ${{ env.CHANNEL_NAME }} from job2!"
+    
+
