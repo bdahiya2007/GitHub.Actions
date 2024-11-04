@@ -12,14 +12,13 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-      - name: Greetings
-        
+      - name: Greetings 
         run: |
           echo "Hello, ${{ env.CHANNEL_NAME }}"
           echo "Hello, $CHANNEL_NAME "
 
       - name: Set env variables programmatically
-        run: echo "COUNT=10000" >> GITHUB_ENV
+        run: echo "COUNT=10000" >> $GITHUB_ENV
 
       - name: Access env variable
         run: echo ${{ env.COUNT }}
