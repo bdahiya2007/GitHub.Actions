@@ -8,7 +8,7 @@ on:
  # CHANNEL_NAME: InterviewPro
 
 jobs:
-  demo:
+  job1:
     runs-on: ubuntu-latest
     env:
      CHANNEL_NAME: InterviewPro
