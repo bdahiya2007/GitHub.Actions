@@ -10,8 +10,8 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
-    env:
-     CHANNEL_NAME: InterviewPro
+  #  env:
+  #   CHANNEL_NAME: InterviewPro
 
     steps:
       - name: Greetings
