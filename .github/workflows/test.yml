@@ -21,4 +21,14 @@ jobs:
           echo "GITHUB_RUN_ATTEMPT - $GITHUB_RUN_ATTEMPT - ${{ github.run_attempt }}"
           echo "GITHUB_PATH - $GITHUB_PATH - ${{ github.path }}
           echo "GITHUB_WORKSPACE - $GITHUB_WORKSPACE - ${{ github.workspace }}
-           
+      
+      - name: Runner
+        run: |
+          echo "RUNNER_NAME - $RUNNER_NAME - ${{ runner.name }}
+          echo "RUNNER_OS - $RUNNER_OS - ${{ runner.os }}
+          echo "RUNNER_ARCH - $RUNNER_ARCH - ${{ runner.arch }}
+          echo "RUNNER_TEMP - $RUNNER_TEMP - ${{ runner.temp }}
+        
+       
+       
+   
