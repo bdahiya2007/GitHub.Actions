@@ -12,16 +12,27 @@ on:
         type: number
         required: true
 
+      gender:
+        description: 'Gender'
+        type: choice
+        options:
+          - Male
+          - Female
+
 jobs:
   manual:
     runs-on: ubuntu-latest
 
     steps:
       - name: Greetings
-        run: echo "${{ inputs.name }}"
+        run: echo ${{ inputs.name }}
 
       - name: Age
         run: echo ${{ inputs.age }}
+
+      - name: Gender
+        run: echo ${{ input.gender }}
+        
       - name: List Environment variables
         run: env
       - name: Adding a path
