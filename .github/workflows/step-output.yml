@@ -17,5 +17,8 @@ jobs:
       - name: access output
         run: echo ${{ steps.set-output.outputs.age }}
 
+      - name: display GITHUB_OUTPUT
+        run: echo ${{ GITHUB_OUTPUT }}
+
         
        
