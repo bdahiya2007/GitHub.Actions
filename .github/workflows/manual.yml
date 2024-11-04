@@ -1,1 +1,18 @@
+name: Manual Workflow
+on:
+  workflow_dispatch:
 
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greetings
+        run: echo "Hello, World!"
+      - name: List Environment variables
+        run: env
+      - name: Adding a path
+        run: echo "$HOME/.m2" >> "$GITHUB_PATH"
+
+      - name: DisplayingList Environment variables after adding '$HOME/.m2'
+        run: env
