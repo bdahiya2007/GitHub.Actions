@@ -15,12 +15,13 @@ jobs:
         run: |
           echo "name=InterviewPro" >> $GITHUB_OUTPUT
           echo "age=23" >> $GITHUB_OUTPUT
+          echo "country=USA" >> $GITHUB_OUTPUT
 
       - name: access output
         run: |
           echo ${{ steps.set-output.outputs.name }}
           echo ${{ steps.set-output.outputs.age }}
-
+          echo ${{ steps.set-output.outputs.country }}
 
       - name: display GITHUB_OUTPUT
         run: echo ${{ github.output }}
