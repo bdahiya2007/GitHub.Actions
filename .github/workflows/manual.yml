@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Greetings
-        run: echo "{{ inputs.name }}"
+        run: echo "${{ inputs.name }}"
       - name: List Environment variables
         run: env
       - name: Adding a path
