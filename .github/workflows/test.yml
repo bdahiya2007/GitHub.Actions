@@ -16,4 +16,9 @@ jobs:
           echo "GITHUB_WORKFLOW - $GITHUB_WORKFLOW - ${{ github.workflow }}"
           echo "GITHUB_RUN_ID - $GITHUB_RUN_ID - ${{ github.run_id }}"
           echo "GITHUB_REPOSITORY - $GITHUB_REPOSITORY - ${{ github.repository }}"
+          echo "GITHUB_EVENT_NAME - $GITHUB_EVENT_NAME - ${{ github.event_name }}"
+          echo "GITHUB_WORKFLOW - $GITHUB_WORKFLOW - ${{ github.workflow }}"
+          echo "GITHUB_RUN_ATTEMPT - $GITHUB_RUN_ATTEMPT - ${{ github.run_attempt }}"
+          echo "GITHUB_PATH - $GITHUB_PATH - ${{ github.path }}
+          echo "GITHUB_WORKSPACE - $GITHUB_WORKSPACE - ${{ github.workspace }}
            
