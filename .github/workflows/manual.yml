@@ -31,7 +31,7 @@ jobs:
         run: echo ${{ inputs.age }}
 
       - name: Gender
-        run: echo ${{ input.gender }}
+        run: echo ${{ inputs.gender }}
         
       - name: List Environment variables
         run: env
