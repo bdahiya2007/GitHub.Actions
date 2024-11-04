@@ -32,3 +32,12 @@ jobs:
         run: |
           echo ${{ env.CHANNEL_NAME }} 
           echo ${{ env.COUNT }} 
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: |
+          echo "Hello, ${{ env.CHANNEL_NAME }} from job2!"
+          echo "Hello, $CHANNEL_NAME from job2!"
+             
