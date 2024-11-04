@@ -20,5 +20,6 @@ jobs:
       - name: display GITHUB_OUTPUT
         run: echo ${{ github.output }}
 
-        
+      - name: display GITHUB_REPOSITORY
+        run: echo ${{ github.repository }} 
        
