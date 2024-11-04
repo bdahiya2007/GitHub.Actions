@@ -16,11 +16,20 @@ jobs:
           echo "name=InterviewPro" >> $GITHUB_OUTPUT
           echo "age=23" >> $GITHUB_OUTPUT
           echo "country=USA" >> $GITHUB_OUTPUT
-
+          
+      - name: set output 2
+        id: set-output2
+        shell: bash
+        run: |
+          echo "salary=15000" >> $GITHUB_OUTPUT
+          echo "company=HCL" >> $GITHUB_OUTPUT
+          
       - name: access output
         run: |
           echo ${{ steps.set-output.outputs.name }}
           echo ${{ steps.set-output.outputs.age }}
+          echo ${{ steps.set-output2.outputs.salary }}
+          echo ${{ steps.set-output2.outputs.company }}
           echo ${{ steps.set-output.outputs.country }}
 
       - name: display GITHUB_OUTPUT
