@@ -4,12 +4,14 @@ on:
   push:
     branches: [ main ]
 
-env:
-  CHANNEL_NAME: InterviewPro
+#env:
+ # CHANNEL_NAME: InterviewPro
 
 jobs:
   demo:
     runs-on: ubuntu-latest
+    env:
+     CHANNEL_NAME: InterviewPro
 
     steps:
       - name: Greetings
